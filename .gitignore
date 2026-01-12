@@ -15,6 +15,7 @@ output.log
 
 # Performance data and generated performance graphs
 perf.*
+temp_auto_push.bat
 *.svg
 
 #utreexod is produced by prepare.sh
@@ -26,10 +27,11 @@ config.toml
 
 # IDE configurations
 .idea/
-.vscode/
 
 # uv python management
 .venv
 
 # tests pycache
 tests/**/__pycache__/*
+.gitignore
+branch_structure.json
