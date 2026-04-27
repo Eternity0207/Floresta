@@ -17,6 +17,7 @@ perf.*
 *.svg
 
 #utreexod is produced by prepare.sh
+temp_auto_push.bat
 utreexod/
 
 # Configuration files
@@ -28,7 +29,6 @@ config.toml
 
 # IDE configurations
 .idea/
-.vscode/
 
 # uv python management
 .venv
@@ -38,3 +38,5 @@ tests/**/__pycache__/*
 
 # commitizen under nixdevshell
 .cz.toml
+.gitignore
+branch_structure.json
