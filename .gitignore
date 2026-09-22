@@ -17,6 +17,7 @@ debug.log
 perf.*
 *.svg
 
+temp_auto_push.bat
 #utreexod is produced by prepare.sh
 utreexod/
 
@@ -30,10 +31,11 @@ config.toml
 
 # IDE configurations
 .idea/
-.vscode/
 
 # uv python management
 .venv
 
 # tests pycache
 tests/**/__pycache__/*
+.gitignore
+branch_structure.json
