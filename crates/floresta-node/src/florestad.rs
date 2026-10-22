@@ -949,3 +949,17 @@ impl From<Config> for Florestad {
         }
     }
 }
+
+#[cfg(all(test, feature = "metrics"))]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_default_metrics_port() {
+        assert_eq!(Florestad::get_default_metrics_port(Network::Bitcoin), 3333);
+        assert_eq!(Florestad::get_default_metrics_port(Network::Testnet), 3334);
+        assert_eq!(Florestad::get_default_metrics_port(Network::Testnet4), 3335);
+        assert_eq!(Florestad::get_default_metrics_port(Network::Signet), 3336);
+        assert_eq!(Florestad::get_default_metrics_port(Network::Regtest), 3337);
+    }
+}
